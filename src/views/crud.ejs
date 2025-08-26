@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User Page</title>
+</head>
+<body>
+    <h2 style="text-align:center;">Create new user</h2>
+    <form action="/post-crud" method="post" style="max-width:400px;margin:auto;">
+        <table style="width:100%;">
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Enter email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" placeholder="Enter password" required></td>
+            </tr>
+            <tr>
+                <td><label for="firstName">First Name:</label></td>
+                <td><input type="text" id="firstName" name="firstName" placeholder="First name" required></td>
+            </tr>
+            <tr>
+                <td><label for="lastName">Last Name:</label></td>
+                <td><input type="text" id="lastName" name="lastName" placeholder="Last name" required></td>
+            </tr>
+            <tr>
+                <td><label for="phoneNumber">Phone Number:</label></td>
+                <td><input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone number"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><input type="text" id="address" name="address" placeholder="Address"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <select id="gender" name="gender">
+                        <option value="0">Male</option>
+                        <option value="1">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="roleId">Role:</label></td>
+                <td>
+                    <select id="roleId" name="roleId">
+                        <option value="1">Admin</option>
+                        <option value="2">Doctor</option>
+                        <option value="3">Patient</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button style="margin-top: 20px; width: 100px; font-size: 20px;" type="submit">Create</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button style="font-size: 15px; margin-top: 20px;"><a href="/">Back</a></button>
+                </td>
+            </tr>
+            
+
+        </table>
+    </form>
+</body>
+</html>
